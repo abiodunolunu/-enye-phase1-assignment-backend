@@ -2,7 +2,6 @@ const axios = require('../Axios.js')
 
 exports.getRates = async (req, res) => {
     const { base, currency } = req.query
-    console.log(currency)
     try {
         // Error checks before proceeding
         if (!base) {
